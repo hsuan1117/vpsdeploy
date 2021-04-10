@@ -15,5 +15,5 @@ RUN mkdir /root/.ssh
 RUN apt-get clean && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
-EXPOSE 22
+EXPOSE 22 80 443 8080 10022
 CMD    ["/usr/sbin/sshd", "-D"]
