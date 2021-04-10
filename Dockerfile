@@ -17,3 +17,4 @@ RUN apt-get clean && \
 
 EXPOSE 22 80 443 8080 10022
 CMD    ["/usr/sbin/sshd", "-D"]
+CMD apachectl -D FOREGROUND
